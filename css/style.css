@@ -1,6 +1,6 @@
-Body{
-  backgrpund-color: black;
-  color:white;
-  font-family: Arial. sans-serif;
+body {
+  background-color: black; 
+  color: white;
+  font-family: Arial, sans-serif; /* Corrected comma instead of period */
   padding: 20px;
 }
