@@ -23,4 +23,25 @@ header {
 header .logo img {
     height: 50px;  /* Adjust the size of the logo */
     width: auto;   /* Keep the aspect ratio */
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    display: flex;  /* Use flexbox for the navigation list */
+    justify-content: center;  /* Center the navigation items */
+}
 
+nav ul li {
+    margin-left: 20px;  /* Space between the navigation items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E6EEE6;  /* Light gray text color */
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #447B12;  /* Dark green background color on hover */
+    border-radius: 5px;  /* Rounded corners on hover */
+}
