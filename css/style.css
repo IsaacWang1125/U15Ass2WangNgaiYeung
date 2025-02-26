@@ -27,7 +27,7 @@ header .logo img {
 
 nav ul {
     list-style-type: none;
-    display: flex;
+    display: center;
 }
 
 nav ul li {
