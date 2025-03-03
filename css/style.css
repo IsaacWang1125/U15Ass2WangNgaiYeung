@@ -54,3 +54,29 @@ nav ul li a:hover {
     color: #E6EEE6;            
     border-radius: 5px;       
 }
+
+/* Second navigation menu */
+.secondary-nav {
+    background-color: #4D9B23;  
+    padding: 10px 0;
+}
+
+.secondary-nav ul {
+    display: flex;
+    justify-content: center;  
+}
+
+.secondary-nav ul li {
+    margin: 0 15px;
+}
+
+.secondary-nav ul li a {
+    color: #0E0F0E;
+    font-size: 16px;
+    padding: 5px 15px;
+}
+
+.secondary-nav ul li a:hover {
+    background-color: #3C7D1B;
+    border-radius: 5px;
+}
