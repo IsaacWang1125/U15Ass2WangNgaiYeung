@@ -8,16 +8,9 @@ html, body {
     width: 100%;
     height: 100%;
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column; /* Added flex direction */
 }
 
-.wrapper {
-    flex: 1; /* Added flex property */
-    display: flex;
-    flex-direction: column;
-}
-
+/*----------------------------------------------------------------------------------- Header styling ----------------------------------------------------------------------------------- */
 header {
     background-color: #69AF29;  /* Green background */
     padding: 20px;
@@ -26,11 +19,13 @@ header {
     align-items: center;
 }
 
+/*----------------------------------------------------------------------------------- Logo image ----------------------------------------------------------------------------------- */
 header .logo img {
     height: 50px;
     width: auto;
 }
 
+/*----------------------------------------------------------------------------------- First Navigation ----------------------------------------------------------------------------------- */
 nav ul {
     list-style-type: none; 
     display: flex;         
@@ -60,6 +55,7 @@ nav ul li a:hover {
     border-radius: 5px;       
 }
 
+/*----------------------------------------------------------------------------------- Second navigation----------------------------------------------------------------------------------- */
 .secondary-nav {
     background-color: #4D9B23;  
     padding: 10px 0;
@@ -85,6 +81,7 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+/*----------------------------------------------------------------------------------- Content ----------------------------------------------------------------------------------- */
 .content {
     background-color: #f9f9f9; /* Added missing semicolon */
     padding: 20px;
@@ -110,6 +107,7 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
+/*----------------------------------------------------------------------------------- Sections ----------------------------------------------------------------------------------- */
 .sections {
     width: 45%;
     padding: 20px;
@@ -117,7 +115,8 @@ nav ul li a:hover {
     background-color: #f9f9f9; /* Added missing semicolon */
 }
 
-footer {
+/*----------------------------------------------------------------------------------- Footer ----------------------------------------------------------------------------------- */
+footer { /* Changed from .footer to footer */
     background-color: #333;
     color: white;
     padding: 10px;
