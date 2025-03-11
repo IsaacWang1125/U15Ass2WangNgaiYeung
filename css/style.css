@@ -83,9 +83,9 @@ nav ul li a:hover {
 
 /*----------------------------------------------------------------------------------- Content ----------------------------------------------------------------------------------- */
 .content {
-    background-color: #f9f9f9; /* Added missing semicolon */
+    background-color: #f9f9f9;
     padding: 20px;
-    border-radius: 10px; /* Corrected px spacing */
+    border-radius: 10px; 
     text-align: center;
     width: 100%;
     max-width: 100%;
@@ -111,14 +111,16 @@ nav ul li a:hover {
 .sections {
     width: 45%;
     padding: 20px;
-    border: 1px solid #ddd; /* Added missing semicolon */
-    background-color: #f9f9f9; /* Added missing semicolon */
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    margin-top: 20px;
 }
 
 /*----------------------------------------------------------------------------------- Footer ----------------------------------------------------------------------------------- */
-footer { /* Changed from .footer to footer */
+footer { 
     background-color: #333;
     color: white;
     padding: 10px;
-    position: relative; /* Added missing semicolon */
+    position: relative; 
+    margin-top: 20px;
 }
