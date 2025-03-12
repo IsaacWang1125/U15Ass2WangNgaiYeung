@@ -1,16 +1,3 @@
-/*----------------------------------------------------------------------------------- Content Setting ----------------------------------------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.content {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 20px;
-  background-color: #FFFFFF;
 /*----------------------------------------------------------------------------------- Header styling ----------------------------------------------------------------------------------- */
 header {
     background-color: #69AF29;  /* Green background */
@@ -83,6 +70,19 @@ nav ul li a:hover {
 }
 
 /*----------------------------------------------------------------------------------- Content ----------------------------------------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background-color: #FFFFFF;
     
 .right {
   flex: 1;
