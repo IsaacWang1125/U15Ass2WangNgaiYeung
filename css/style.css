@@ -89,6 +89,28 @@ nav ul li a:hover {
     flex-wrap: wrap; 
 }
 
+/*!Right Side */
+.left {
+  flex: 1;
+  text-align: center;
+}
+
+.right-middle-image {
+  width: 70%; 
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.right-bottom-image {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-bottom-image {
+  width: 45%; 
+  height: auto;
+}
+/*!Left Side */
 .left {
     flex: 1;
     text-align: center;
