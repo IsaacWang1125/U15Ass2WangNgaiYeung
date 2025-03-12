@@ -106,33 +106,7 @@ body {
   border-radius: 5px;
 }
 
-.description {
-  position: absolute;
-  bottom: 10px;
-  left: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-}
 
-.image-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  flex: 1;
-}
-
-.image-box {
-  flex: 1;
-}
-
-.image-box img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
 
 /*----------------------------------------------------------------------------------- Sections ----------------------------------------------------------------------------------- */
 .sections {
@@ -142,7 +116,6 @@ body {
     background-color: #f9f9f9;
     margin-top: 20px;
 }
-
 /*----------------------------------------------------------------------------------- Footer ----------------------------------------------------------------------------------- */
 .footer { 
     background-color: #333;
