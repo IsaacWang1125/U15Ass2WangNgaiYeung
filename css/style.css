@@ -1,11 +1,11 @@
 /*----------------------------------------------------------------------------------- Header styling ----------------------------------------------------------------------------------- */
 header {
-    background-color: #69AF29;  /* Green background */
+    background-color: #69AF29;  
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;  /* This will help on smaller screens */
+    flex-wrap: wrap;  
 }
 
 /*----------------------------------------------------------------------------------- Logo image ----------------------------------------------------------------------------------- */
@@ -86,13 +86,13 @@ nav ul li a:hover {
     gap: 20px;
     padding: 20px;
     background-color: #FFFFFF;
-    flex-wrap: wrap;  /* This allows content to stack on smaller screens */
+    flex-wrap: wrap; 
 }
 
 .right {
     flex: 1;
     text-align: center;
-    min-width: 250px;  /* Ensures the right section doesn't get too small */
+    min-width: 250px;
 }
 
 .right-image {
@@ -113,17 +113,17 @@ nav ul li a:hover {
     color: white;
     padding: 20px 0;
     position: relative;
-    clear: both; /* Ensures the footer stays below the content */
-    width: 100%;  /* Ensures footer spans the full width */
+    clear: both; 
+    width: 100%; 
 }
 
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;  /* Centers the footer content */
+    text-align: center; 
 }
 
-/* Add a margin-top to the content section so that it doesn't overlap with the footer */
+
 .content {
     margin-bottom: 60px; /* Prevent overlap with footer */
 }
