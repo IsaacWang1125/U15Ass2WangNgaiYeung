@@ -72,39 +72,7 @@ nav ul li a:hover {
 }
 
 /*----------------------------------------------------------------------------------- Content ----------------------------------------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #FFFFFF;
-  color: #333;
-  padding: 20px;
-}
-
-.content {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.main-image {
-  flex: 1;
-  position: relative;
-}
-
-.main-image img {
-  width: 50%;
-  border-radius: 5px;
-}
 
 
 
