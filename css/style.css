@@ -103,7 +103,7 @@ body {
 
 .main-image img {
   width: 50%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .description {
@@ -114,7 +114,6 @@ body {
   color: white;
   padding: 10px;
   border-radius: 5px;
-  width: calc(100% - 40px);
   text-align: center;
 }
 
