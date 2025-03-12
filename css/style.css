@@ -101,7 +101,7 @@ nav ul li a:hover {
 }
 
 .right-bottom-image {
-  width: 45%; 
+  width: 25%; 
   height: auto;
 }
 /*!Left Side */
@@ -112,7 +112,7 @@ nav ul li a:hover {
 }
 
 .left-image {
-    width: 80%;
+    width: 30%;
     height: auto;
     margin-bottom: 15px;
 }
