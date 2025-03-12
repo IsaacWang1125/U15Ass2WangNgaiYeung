@@ -72,29 +72,47 @@ nav ul li a:hover {
 }
 
 /*----------------------------------------------------------------------------------- Content ----------------------------------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFFFFF;
+  color: #333;
+  padding: 20px;
+}
+
 .content {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px; 
-    text-align: center;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 2px solid #2c3e50;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.content h2 {
-    color: #333;
-    font-size: 24px;
+.main-image {
+  flex: 1;
+  position: relative;
 }
 
-.content p {
-    color: #666;
-    font-size: 16px;
-    line-height: 1.5;
-    max-width: 80%;
-    margin: 0 auto;
+.main-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.description {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: calc(100% - 40px);
+  text-align: center;
 }
 
 /*----------------------------------------------------------------------------------- Sections ----------------------------------------------------------------------------------- */
