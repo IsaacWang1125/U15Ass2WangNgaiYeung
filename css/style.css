@@ -95,12 +95,6 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.right-middle-image {
-  width: 70%; 
-  height: auto;
-  margin-bottom: 15px;
-}
-
 .right-bottom-image {
   display: flex;
   justify-content: space-between;
