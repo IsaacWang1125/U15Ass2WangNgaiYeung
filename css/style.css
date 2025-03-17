@@ -184,6 +184,26 @@ nav ul li a:hover {
 
     .right-bottom-image {
 
+/*----------------------------------------------------------------------------------- Middle Text Styling ----------------------------------------------------------------------------------- */
+.middle-text {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light background color for the section */
+    margin-top: 20px; /* Space above the middle text */
+    font-size: 18px;
+    color: #333;
+    font-style: italic;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .middle-text {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+
+
 /*----------------------------------------------------------------------------------- Footer styling ----------------------------------------------------------------------------------- */
 .footer-container {
     background-color: #333;
