@@ -111,20 +111,20 @@ nav ul li a:hover {
 }
 
 .left-image-box {
-    width: 512px; /* Match the width of the left image */
-    height: 640px; /* Match the height of the left image */
-    background-color: #f0f0f0; /* Light background color */
+    width: 512px; 
+    height: 640px; 
+    background-color: #f0f0f0; 
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px; /* Space above the image */
-    border-radius: 10px; /* Optional: add rounded corners */
+    margin-top: 10px; 
+    border-radius: 10px; 
 }
 
 .left-image {
-    max-width: 100%; /* Ensure the image doesn't exceed the box size */
-    height: auto;    /* Maintain the aspect ratio */
-    border-radius: 10px; /* Optional: add rounded corners to the image */
+    max-width: 100%;
+    height: auto;   
+    border-radius: 10px; 
 }
 
 /* Right Section Styling */
@@ -153,54 +153,38 @@ nav ul li a:hover {
 }
 
 .right-bottom-image-box {
-    width: 606px; /* Use the width of the largest image (606px) */
-    height: 504px; /* Use the height of the first right image (504px) */
-    background-color: #f0f0f0; /* Light background color */
+    width: 606px; 
+    height: 504px;
+    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px; /* Optional: add rounded corners */
+    border-radius: 10px; 
 }
 
 .right-bottom-image-left,
 .right-bottom-image-right {
-    max-width: 100%; /* Ensure the images fit inside the box */
-    height: auto;    /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: add rounded corners to the images */
+    max-width: 100%; 
+    height: auto;    
+    border-radius: 10px; 
 }
 
-/* Media Query for smaller screens */
-@media (max-width: 768px) {
-    .content {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .left,
-    .right {
-        min-width: 100%;
-        text-align: center;
-    }
-
-    .right-bottom-image {
 
 /*----------------------------------------------------------------------------------- Middle Text Styling ----------------------------------------------------------------------------------- */
 .middle-text {
     width: 100%;
     text-align: center;
     padding: 20px;
-    background-color: #f0f0f0; /* Light background color for the section */
-    margin-top: 20px; /* Space above the middle text */
+    background-color: #f0f0f0; 
+    margin-top: 20px; 
     font-size: 18px;
     color: #333;
     font-style: italic;
 }
 
-/* Media Query for smaller screens */
-@media (max-width: 768px) {
-    .middle-text {
-        font-size: 16px; /* Adjust font size for smaller screens */
-    }
+
+.secondary-nav + .middle-text {
+    margin-top: 20px; 
 }
 
 
