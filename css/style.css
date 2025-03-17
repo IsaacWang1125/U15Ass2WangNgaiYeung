@@ -119,6 +119,7 @@ nav ul li a:hover {
     align-items: center;
     margin-top: 10px; 
     border-radius: 10px; 
+    position: relative; 
 }
 
 .left-image {
@@ -160,6 +161,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     border-radius: 10px; 
+    position: relative; 
 }
 
 .right-bottom-image-left,
@@ -169,10 +171,24 @@ nav ul li a:hover {
     border-radius: 10px; 
 }
 
-.blur-image {
-    filter: blur(5px); 
+/* Text styling for centering it inside the image */
+.textmiddle {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+    pointer-events: none; 
 }
 
+/* Blur effect */
+.blur-image {
+    filter: blur(5px); 
+    transition: filter 0.3s ease-in-out; 
+}
 
 .blur-image:hover {
     filter: blur(0); 
@@ -183,11 +199,11 @@ nav ul li a:hover {
     filter: blur(5px);
 }
 
-
 .right-bottom-image-left:hover,
 .right-bottom-image-right:hover {
     filter: blur(0);
 }
+
 
 /*----------------------------------------------------------------------------------- Middle Text Styling ----------------------------------------------------------------------------------- */
 .middle-text {
