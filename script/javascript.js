@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   image.addEventListener('click', function () {
-    alert('Test');
+    alert('Image clicked!');
 
   });
 });
