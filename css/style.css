@@ -75,22 +75,6 @@ nav ul li a:hover {
 
 /*----------------------------------------------------------------------------------- Content ----------------------------------------------------------------------------------- */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Content container */
-.content {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
-    background-color: #FFFFFF;
-    flex-wrap: wrap;
-}
-
 /* Left Section Styling */
 .left {
     flex: 1;
@@ -110,9 +94,9 @@ nav ul li a:hover {
 }
 
 .left-image-box {
-    width: 512px; /* Match the width of the left image */
-    height: 640px; /* Match the height of the left image */
-    background-color: #f0f0f0; /* Light background color */
+    width: 600px;  /* Increase the width of the box (larger than the 512px image) */
+    height: 700px; /* Increase the height of the box (larger than the 640px image) */
+    background-color: #333; /* Dark grey background color */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,6 +166,14 @@ nav ul li a:hover {
     }
 
     .right-bottom-image {
+        flex-direction: column;
+    }
+
+    .right-bottom-image-box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
 
 
 
