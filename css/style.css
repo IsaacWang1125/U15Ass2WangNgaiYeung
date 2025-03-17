@@ -169,6 +169,25 @@ nav ul li a:hover {
     border-radius: 10px; 
 }
 
+.blur-image {
+    filter: blur(5px); 
+}
+
+
+.blur-image:hover {
+    filter: blur(0); 
+}
+
+.right-bottom-image-left.blur-image,
+.right-bottom-image-right.blur-image {
+    filter: blur(5px);
+}
+
+
+.right-bottom-image-left:hover,
+.right-bottom-image-right:hover {
+    filter: blur(0);
+}
 
 /*----------------------------------------------------------------------------------- Middle Text Styling ----------------------------------------------------------------------------------- */
 .middle-text {
