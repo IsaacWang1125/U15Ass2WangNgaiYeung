@@ -397,3 +397,76 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+/*----------------------------------------------------------------------------------- Event history page ----------------------------------------------------------------------------------- */
+
+.image-reader {
+    display: flex;
+    justify-content: center; /* Centers the boxes horizontally */
+    gap: 20px; /* Space between the two boxes */
+    margin-top: 40px; /* Add space from the top */
+}
+
+.image-box {
+    position: relative;
+    width: 300px; /* You can adjust the width */
+    height: 300px; /* You can adjust the height */
+    background-color: #fff;
+    border: 2px solid #ccc;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-image {
+    max-width: 80%; /* Make image smaller than the box */
+    max-height: 80%; /* Ensure image stays within the box */
+    object-fit: contain;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+/* Optional: Hover effect on arrows */
+.arrow:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.third-image-reader {
+    width: 600px; /* Make this box rectangular */
+    height: 300px; /* Adjust the height */
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; /* Add space above the third image box */
+    margin-left: auto;
+    margin-right: auto; /* Center the third box */
+    border-radius: 10px;
+    position: relative;
+}
+
+.third-image-reader .event-image {
+    max-width: 90%; /* Image size smaller than the container */
+    max-height: 90%;
+    object-fit: contain;
+}
