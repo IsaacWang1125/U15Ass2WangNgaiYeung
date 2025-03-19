@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function () {
 // ----------------------------------------------------------------------------------- Body ----------------------------------------------------------------------------------- //
 
 // Array (Store Images)
-const images1 = ['../image/ChiartyHistory1.jpg', '../image/ChiartyHistory2.jpg', '../image/ChiartyHistory3.jpg']; // Images for first image box
-const images2 = ['../image/SecondChiartyHistory1.jpg', '../image/SecondChiartyHistory2.jpg', '../image/SecondChiartyHistory3.jpg']; // Images for second image box
-const images3 = ['../image/ThirdChiartyHistory1.jpg', '../image/ThirdChiartyHistory2.jpg', '../image/ThirdChiartyHistory3.jpg']; // Images for third image box
+const images1 = ['image/ChiartyHistory1.jpg', 'image/ChiartyHistory2.jpg', 'image/ChiartyHistory3.jpg']; // Images for first image box
+const images2 = ['image/SecondChiartyHistory1.jpg', 'image/SecondChiartyHistory2.jpg', 'image/SecondChiartyHistory3.jpg']; // Images for second image box
+const images3 = ['image/ThirdChiartyHistory1.jpg', 'image/ThirdChiartyHistory2.jpg', 'image/ThirdChiartyHistory3.jpg']; // Images for third image box
 
 // Current index; set to 0
 let currentIndex1 = 0;
