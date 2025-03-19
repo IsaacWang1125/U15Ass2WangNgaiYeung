@@ -1,24 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
   const image = document.querySelector('.blur-image');
 
-
   image.addEventListener('click', function () {
     alert('Image clicked!');
-
   });
 });
 
 // ----------------------------------------------------------------------------------- Body ----------------------------------------------------------------------------------- //
 
-//Array (Store Image)
+// Array (Store Images)
 const images1 = ['../image/ChiartyHistory1.jpg', '../image/ChiartyHistory2.jpg', '../image/ChiartyHistory3.jpg']; // Images for first image box
 const images2 = ['../image/SecondChiartyHistory1.jpg', '../image/SecondChiartyHistory2.jpg', '../image/SecondChiartyHistory3.jpg']; // Images for second image box
 const images3 = ['../image/ThirdChiartyHistory1.jpg', '../image/ThirdChiartyHistory2.jpg', '../image/ThirdChiartyHistory3.jpg']; // Images for third image box
 
-// Current undex ; set to 0
-let currentIndex1 = 0; 
-let currentIndex2 = 0; 
-let currentIndex3 = 0; 
+// Current index; set to 0
+let currentIndex1 = 0;
+let currentIndex2 = 0;
+let currentIndex3 = 0;
 
 function changeImage(direction, imageNumber) {
     let images;
@@ -42,13 +40,14 @@ function changeImage(direction, imageNumber) {
     }
 
     // Set the new image based on the current index
-    if (boxNumber === 1) {
+    if (imageNumber === 1) {
         document.getElementById('image1').src = images[currentIndex];
         currentIndex1 = currentIndex;
-    } else if (boxNumber === 2) {
+    } else if (imageNumber === 2) {
         document.getElementById('image2').src = images[currentIndex];
         currentIndex2 = currentIndex;
-    } else if (boxNumber === 3) {
+    } else if (imageNumber === 3) {
         document.getElementById('image3').src = images[currentIndex];
         currentIndex3 = currentIndex;
     }
+}
