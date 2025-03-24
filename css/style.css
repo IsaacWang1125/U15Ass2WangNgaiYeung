@@ -473,7 +473,6 @@ button:hover {
 
 /*----------------------------------------------------------------------------------- Game page ----------------------------------------------------------------------------------- */
 
-/* Container to center the box */
 .center-container {
     display: flex;
     justify-content: center;
@@ -498,7 +497,8 @@ button:hover {
     text-decoration: none;
     display: flex;
     justify-content: center;
-
+    align-items: center; /* Added missing closing brace */
+}
 
 /* Play icon image inside the circle */
 .play-icon {
@@ -520,10 +520,18 @@ header {
     text-align: center;
 }
 
+.table-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
 table {
     width: 100%;
-    margin: 20px 0;
     border-collapse: collapse;
+    display: table; /* Ensure the table is displayed */
 }
 
 table, th, td {
@@ -539,42 +547,4 @@ th {
     background-color: #007BFF;
     color: white;
 }
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-table {
-    width: 100%;
-    margin: 20px 0;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #007BFF;
-    color: white;
-}
