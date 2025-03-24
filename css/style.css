@@ -470,3 +470,38 @@ button:hover {
     max-height: 90%;
     object-fit: contain;
 }
+
+/*----------------------------------------------------------------------------------- Bame page ----------------------------------------------------------------------------------- */
+
+/* Container to center the box */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Box styles */
+.game-style {
+    width: 300px;
+    height: 200px;
+    background-color: #007BFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Link styles to remove default styling */
+.game-link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+
+
+/* Play icon image inside the circle */
+.play-icon {
+    width: 40px;
+    height: 40px;
+}
