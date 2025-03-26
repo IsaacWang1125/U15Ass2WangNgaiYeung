@@ -146,6 +146,17 @@ header nav ul li a {
   display: block;
 }
 
+/* Specific styling for "About Us" Image to make it larger */
+.about-us-image-container {
+  height: 350px; /* Set a larger height for the "About Us" image */
+}
+
+/* Optional: Adjust image for "About Us" to make it bigger */
+.about-us-image-container img {
+  object-fit: cover; /* Maintain aspect ratio */
+  max-width: 100%;
+  max-height: 100%;
+}
 
 
 /*----------------------------------------------------------------------------------- Footer styling ----------------------------------------------------------------------------------- */
