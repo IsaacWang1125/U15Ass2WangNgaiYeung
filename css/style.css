@@ -1,225 +1,120 @@
 /*----------------------------------------------------------------------------------- Header styling ----------------------------------------------------------------------------------- */
-header {
-    background-color: #69AF29;  
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;  
-}
-
-/*----------------------------------------------------------------------------------- Logo image ----------------------------------------------------------------------------------- */
-header .logo img {
-    height: 50px;
-    width: auto;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
 /*----------------------------------------------------------------------------------- First Navigation ----------------------------------------------------------------------------------- */
-nav ul {
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
+header {
+  background-color: #2d3e50;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
-nav ul li {
-    margin-right: 20px;
+header .logo img {
+  max-width: 120px;
 }
 
-nav ul li:last-child {
-    margin-right: 0;
+header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 18px;
-    padding: 5px 10px;
-    display: block;
+header nav ul {
+  list-style: none;
+  padding: 0;
 }
 
-nav ul li a:hover {
-    background-color: #447B12;
-    color: #E6EEE6;
-    border-radius: 5px;
+header nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 /*----------------------------------------------------------------------------------- Second navigation----------------------------------------------------------------------------------- */
 .secondary-nav {
-    background-color: #4D9B23;
-    padding: 10px 0;
-    width: 100%;
-    box-sizing: border-box;
+  background-color: #333;
+  padding: 10px 0;
 }
 
 .secondary-nav ul {
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  padding: 0;
+  text-align: center;
 }
 
 .secondary-nav ul li {
-    margin: 0 15px;
+  display: inline;
+  margin: 0 15px;
 }
 
 .secondary-nav ul li a {
-    color: #FFFFFF;
-    font-size: 16px;
-    padding: 5px 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
 }
 
-.secondary-nav ul li a:hover {
-    background-color: #3C7D1B;
-    border-radius: 5px;
-}
 
 
 /*----------------------------------------------------------------------------------- Content ----------------------------------------------------------------------------------- */
 
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Content container */
-.content {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
-    background-color: #FFFFFF;
-    flex-wrap: wrap;
-}
-
-/* Left Section Styling */
-.left {
-    flex: 1;
-    text-align: left;
-    min-width: 250px;
-}
-
-.left h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.left .description {
-    font-size: 16px;
-    color: #333;
-    padding: 10px 0;
-}
-
-.left-image-box {
-    width: 512px; 
-    height: 640px; 
-    background-color: #f0f0f0; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px; 
-    border-radius: 10px; 
-    position: relative; 
-}
-
-.left-image {
-    max-width: 100%;
-    height: auto;   
-    border-radius: 10px; 
-}
-
-/* Right Section Styling */
-.right {
-    flex: 1;
-    text-align: right;
-    min-width: 250px;
-}
-
-.right h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.right .description {
-    font-size: 16px;
-    color: #333;
-    padding: 10px 0;
-}
-
-.right-bottom-image {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.right-bottom-image-box {
-    width: 606px; 
-    height: 504px;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px; 
-    position: relative; 
-}
-
-.right-bottom-image-left,
-.right-bottom-image-right {
-    max-width: 100%; 
-    height: auto;    
-    border-radius: 10px; 
-}
-
-/* Text styling for centering it inside the image */
-.textmiddle {
-    position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    font-size: 24px;
-    color: #fff;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
-    pointer-events: none; 
-}
-
-/* Blur effect */
-.blur-image {
-    filter: blur(5px); 
-    transition: filter 0.3s ease-in-out; 
-}
-
-.blur-image:hover {
-    filter: blur(0); 
-}
-
-.right-bottom-image-left.blur-image,
-.right-bottom-image-right.blur-image {
-    filter: blur(5px);
-}
-
-.right-bottom-image-left:hover,
-.right-bottom-image-right:hover {
-    filter: blur(0);
-}
-
-
-/*----------------------------------------------------------------------------------- Middle Text Styling ----------------------------------------------------------------------------------- */
 .middle-text {
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-    background-color: #f0f0f0; 
-    margin-top: 20px; 
-    font-size: 18px;
-    color: #333;
-    font-style: italic;
+  background-color: #e0e0e0;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
 }
 
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
 
-.secondary-nav + .middle-text {
-    margin-top: 20px; 
+.left, .right {
+  width: 48%;
+}
+
+.left h2, .right h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.left .description, .right .description {
+  font-size: 16px;
+  color: #555;
+}
+
+.left-image-box, .right-bottom-image-box {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.left-image, .right-bottom-image-left, .right-bottom-image-right {
+  width: 100%;
+  height: auto;
+  filter: blur(2px);
+}
+
+.textmiddle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
 }
 
 
