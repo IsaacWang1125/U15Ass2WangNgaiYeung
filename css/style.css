@@ -99,12 +99,14 @@ header nav ul li a {
   position: relative;
   width: 100%;
   margin-top: 15px;
+  overflow: hidden; /* Ensures images are cropped if necessary */
 }
 
 .left-image, .right-bottom-image-left, .right-bottom-image-right {
   width: 100%;
   height: auto;
-  filter: blur(2px);
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+  filter: blur(5px); /* Apply blur effect */
 }
 
 .textmiddle {
@@ -116,6 +118,13 @@ header nav ul li a {
   color: white;
   font-weight: bold;
 }
+
+.left-image-box:hover .left-image,
+.right-bottom-image-box:hover .right-bottom-image-left,
+.right-bottom-image-box:hover .right-bottom-image-right {
+  filter: blur(0); /* Remove blur on hover */
+}
+
 
 
 /*----------------------------------------------------------------------------------- Footer styling ----------------------------------------------------------------------------------- */
