@@ -68,86 +68,183 @@ header nav ul li a {
 
 /*----------------------------------------------------------------------------------- Content ----------------------------------------------------------------------------------- */
 
-.middle-text {
-  background-color: #e0e0e0;
-  padding: 30px 20px;
-  text-align: center;
-  font-size: 18px;
+.main-content {
+  padding: 50px 20px;
+  background-color: #fff;
 }
 
-.content {
+.content-container {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  gap: 20px;
 }
 
-.left, .right {
+.content-box {
   width: 48%;
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.left h2, .right h2 {
+.content-box h2 {
   font-size: 28px;
   margin-bottom: 15px;
+  color: #333;
 }
 
-.left .description, .right .description {
+.content-box .description {
   font-size: 16px;
-  color: #555;
+  color: #666;
 }
 
-.left-image-box, .right-bottom-image-box {
+.image-container {
   position: relative;
   width: 100%;
+  height: 250px;
+  overflow: hidden;
   margin-top: 15px;
-  overflow: hidden; /* Ensures images are cropped if necessary */
+  border-radius: 8px;
 }
 
-.left-image, .right-bottom-image-left, .right-bottom-image-right {
+.image {
   width: 100%;
-  height: auto;
-  transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
-  filter: blur(5px); /* Apply blur effect */
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+  filter: blur(5px);
 }
 
-.textmiddle {
+.overlay {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 24px;
+  font-size: 18px;
   color: white;
   font-weight: bold;
+  opacity: 0.8;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: none;
 }
 
-.left-image-box:hover .left-image,
-.right-bottom-image-box:hover .right-bottom-image-left,
-.right-bottom-image-box:hover .right-bottom-image-right {
-  filter: blur(0); /* Remove blur on hover */
+.image-container:hover .image {
+  filter: blur(0);
 }
+
+.image-container:hover .overlay {
+  display: block;
+}
+
+.events-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.event-box {
+  width: 48%;
+  position: relative;
+}
+
+.event-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  filter: blur(5px);
+}
+
+.event-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  opacity: 0.8;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: none;
+}
+
+.event-box:hover .event-image {
+  filter: blur(0);
+}
+
+.event-box:hover .event-overlay {
+  display: block;
+}
+
 
 
 
 /*----------------------------------------------------------------------------------- Footer styling ----------------------------------------------------------------------------------- */
-.footer-container {
-    background-color: #333;
-    padding-bottom: 4rem;
-}
-
 .footer {
-  width: 80%
-  height: 40vh;
   background-color: #333;
   color: #fff;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
 }
 
-.footer-heading {
+.footer-container {
   display: flex;
-  flex-direction: column;
-  margin-right: 4rem
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  width: 23%;
+}
+
+.footer-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+  color: #f4f4f4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .events-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 
