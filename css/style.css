@@ -189,23 +189,29 @@ header nav ul li a {
 .footer {
   background-color: #333;
   color: #fff;
-  padding: 30px;
-  text-align: center;
+  padding: 30px 20px;
+  text-align: left;
+  width: 100%; /* Ensure footer takes full width */
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
+  justify-content: space-between; /* Spread out sections evenly */
+  gap: 20px; /* Add space between sections */
+  flex-wrap: nowrap; /* Prevent wrapping into a column */
+  width: 100%;
+  max-width: 1200px; /* Optional: Limit the width */
+  margin: 0 auto; /* Center the container horizontally */
 }
 
 .footer-section {
-  width: 23%;
+  flex: 1 1 200px; /* Flex-grow, flex-shrink, and set a minimum width for each section */
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 .footer-section h2 {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
@@ -220,31 +226,25 @@ header nav ul li a {
   color: #f4f4f4;
 }
 
-/* Responsive Design */
+/* No Wrapping on Small Screens */
 @media (max-width: 768px) {
-  .content-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .content-box {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .events-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .footer-container {
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: nowrap; /* Prevent footer from wrapping into columns */
+    justify-content: space-between; /* Evenly space the sections */
   }
 
   .footer-section {
-    width: 100%;
-    margin-bottom: 20px;
+    text-align: center; /* Center the text for smaller screens */
+    padding: 10px; /* Adjust padding for better mobile experience */
+    min-width: 150px; /* Prevent sections from becoming too small */
+  }
+
+  .footer-section h2 {
+    font-size: 16px; /* Smaller header font size on mobile */
+  }
+
+  .footer-section a {
+    font-size: 14px; /* Smaller font size for links */
   }
 }
 
