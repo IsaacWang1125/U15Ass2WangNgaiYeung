@@ -184,6 +184,34 @@ header nav ul li a {
   display: block;
 }
 
+.video-text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.video {
+  width: 80%;
+  max-width: 600px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.video-description {
+  text-align: center;
+}
+
+.video-description h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.video-description p {
+  font-size: 16px;
+  color: #555;
+}
 
 /*----------------------------------------------------------------------------------- Footer styling ----------------------------------------------------------------------------------- */
 .footer {
